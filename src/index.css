@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  /* ==================================================home css====================================== */
+  @keyframes move {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .bg-3d-animated {
+    background: linear-gradient(45deg, #ff6a00, #ee0979, #ffb300, #00c6ff, #7c1f7c);
+    background-size: 400% 400%;
+    animation: linear infinite;
+    perspective: 1000px;
+  }
+
+
+  /* ===================login css======================= */
+  @keyframes gradientAnimation {
+    0% {
+      background-color: #ff7e5f; /* Color 1 */
+    }
+    14% {
+      background-color: #feb47b; /* Color 2 */
+    }
+    28% {
+      background-color: #ff6a88; /* Color 3 */
+    }
+    42% {
+      background-color: #ff8e53; /* Color 4 */
+    }
+    57% {
+      background-color: #8e44ad; /* Color 5 */
+    }
+    71% {
+      background-color: #4eCDC4; /* Color 6 */
+    }
+    85% {
+      background-color: #56ab2f; /* Color 7 */
+    }
+    100% {
+      background-color: #ff7e5f; /* Color 1 (loop back) */
+    }
+  }
+  
+  .bg-animated {
+    animation: gradientAnimation 10s ease infinite; /* Adjust duration and easing as needed */
+    background-size: 400% 400%; /* Ensures smooth gradient transition */
+  }
+  
+  /* ============================home css */
+ 
+  .hed h3{
+    background: linear-gradient(135deg, #ff0080, #ff8c00, #ff0080, #8c00ff);
+  }
